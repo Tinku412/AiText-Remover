@@ -121,7 +121,7 @@ app.post('/remove-watermark', upload.single('image'), async (req, res) => {
   } catch (error) {
     console.error('Error processing image:', error);
     res.status(500).json({ 
-      error: error.message || 'An error occurred while processing the image'
+      error: 'An error occurred while processing the image'
     });
   }
 });

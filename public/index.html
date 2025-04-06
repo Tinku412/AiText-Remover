@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSPLC9L2CX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XSPLC9L2CX');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watermark Removal Tool</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Text Removal Tool</h1>
-    
-    <div class="container">
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>AI Text Removal Tool</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="https://reddyforai.com" class="active">Home</a></li>
+                    <li><a href="https://reddyforai.com/About.html">About</a></li>
+                    <li><a href="https://reddyforai.com/About.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
         <div class="upload-area" id="uploadArea">
             <p>Drag & drop your image here or click to browse</p>
+            <p>(Works best with .jpg and .png images)</p>
             <input type="file" id="fileInput" accept="image/*">
         </div>
         
@@ -107,7 +130,22 @@
             <h3>AI Analysis</h3>
             <div id="analysisText" class="analysis-text"></div>
         </div>
-    </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2025 AI Text Removal Tool. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="https://reddyforai.com" class="active">Home</a></li>
+                    <li><a href="https://reddyforai.com/About.html">About</a></li>
+                    <li><a href="https://reddyforai.com/About.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     
     <script src="client.js"></script>
 </body>

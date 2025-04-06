@@ -114,7 +114,7 @@ removeWatermarkBtn.addEventListener('click', async () => {
             document.body.removeChild(a);
         };
     } catch (error) {
-        showError('Error: ' + error.message);
+        showError('Error: ' + 'An error occurred while processing the image, please try again.');
     } finally {
         loadingIndicator.style.display = 'none';
         removeWatermarkBtn.disabled = false;
